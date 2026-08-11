@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 const Menu = () => {
@@ -19,7 +19,7 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <img src="logo.png" style={{ width: "50px" }} />
+       <img src={logo} alt="Zerodha" style={{width:"80px"}}></img>
       <div className="menus">
         <ul>
           <li>
