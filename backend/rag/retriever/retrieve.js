@@ -1,5 +1,5 @@
 const { getEmbedding } = require("../embeddings/embedder");
-const { search } = require("../vectordb/faiss");
+const { search } = require("../vectorDB/faiss");
 
 async function retrieveRelevantChunks(question, k = 5) {
 
