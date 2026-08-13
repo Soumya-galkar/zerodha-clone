@@ -17,7 +17,10 @@ console.log("connected to mongodb");
 })
 
 const app = express();
-app.use(cors());
+
+app.use(cors({
+    origin: "https://zerodha-dashboard-chgd.onrender.com"
+}));
 app.use(bodyParser.json());
 
 
