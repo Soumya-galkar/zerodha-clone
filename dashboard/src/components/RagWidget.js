@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+const API_URL = process.env.REACT_APP_API_URL;
 
 const RagWidget = () => {
     // ================= STATES =================
@@ -48,7 +49,7 @@ const RagWidget = () => {
             console.log("Uploading:", selectedFile.name);
 
             const response = await fetch(
-                "http://localhost:3000/rag/upload",
+                `${API_URL}/rag/upload`,
                 {
                     method: "POST",
                     body: formData,
@@ -97,7 +98,7 @@ const RagWidget = () => {
             console.log("Question:", question);
 
             const response = await fetch(
-                "http://localhost:3000/rag/chat",
+                `${API_URL}/rag/chat`,
                 {
                     method: "POST",
 
