@@ -46,7 +46,7 @@ const Summary = () => {
             console.log("Uploading:", selectedFile.name);
 
             const response = await fetch(
-                "http://localhost:3000/rag/upload",
+                `${API_URL}/rag/upload`,
                 {
                     method: "POST",
                     body: formData,
@@ -95,7 +95,7 @@ const Summary = () => {
             console.log("Question:", question);
 
             const response = await fetch(
-                "http://localhost:3000/rag/chat",
+                `${API_URL}/rag/chat`,
                 {
                     method: "POST",
                     headers: {
