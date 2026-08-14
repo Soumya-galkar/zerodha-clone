@@ -47,7 +47,7 @@ const Summary = () => {
             console.log("Uploading:", selectedFile.name);
 
             const response = await fetch(
-                `${API_URL}/rag/upload`,
+                "https://zerodha-backend-vuow.onrender.com/rag/upload",
                 {
                     method: "POST",
                     body: formData,
@@ -96,7 +96,7 @@ const Summary = () => {
             console.log("Question:", question);
 
             const response = await fetch(
-                `${API_URL}/rag/chat`,
+                "https://zerodha-backend-vuow.onrender.com/rag/chat",
                 {
                     method: "POST",
                     headers: {
