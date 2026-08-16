@@ -49,7 +49,7 @@ const RagWidget = () => {
             console.log("Uploading:", selectedFile.name);
 
             const response = await fetch(
-                "https://zerodha-backend-vuow.onrender.com/rag/upload",
+                "https://zerodhabackend-igdj.onrender.com/rag/upload",
                 {
                     method: "POST",
                     body: formData,
@@ -98,7 +98,7 @@ const RagWidget = () => {
             console.log("Question:", question);
 
             const response = await fetch(
-                "https://zerodha-backend-vuow.onrender.com/rag/chat",
+                "https://zerodhabackend-igdj.onrender.com/rag/chat",
                 {
                     method: "POST",
 
